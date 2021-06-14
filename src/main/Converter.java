@@ -20,13 +20,13 @@ public class Converter {
 			
 			switch(menuSelection) {
 				case 1:
-					VolumeConversionMenu(scanner);
+					volumeConversionMenu(scanner);
 					break;
 				case 2:
-					LengthConversionMenu(scanner);
+					lengthConversionMenu(scanner);
 					break;
 				case 3:
-					TemperatureConversionMenu(scanner);
+					temperatureConversionMenu(scanner);
 					break;
 				case 4:
 					System.out.println("\nClosing application.\n");
@@ -39,7 +39,7 @@ public class Converter {
 		scanner.close();
 	}
 	
-	public static void VolumeConversionMenu(Scanner scanner) {
+	public static void volumeConversionMenu(Scanner scanner) {
 		int subMenuSelection = 0;
 		
 		while (subMenuSelection != 3) {
@@ -53,10 +53,10 @@ public class Converter {
 			
 			switch (subMenuSelection) {
 				case 1:
-					VolumeConversion(subMenuSelection, scanner);
+					volumeConversion(subMenuSelection, scanner);
 					break;
 				case 2:
-					VolumeConversion(subMenuSelection, scanner);
+					volumeConversion(subMenuSelection, scanner);
 					break;
 				case 3:
 					System.out.println("\nReturning to Main Menu.\n");
@@ -68,7 +68,7 @@ public class Converter {
 		}
 	}
 	
-	public static void VolumeConversion(int selection, Scanner scanner) {
+	public static void volumeConversion(int selection, Scanner scanner) {
 		System.out.println("\nEnter value:");
 		double value = Double.parseDouble(scanner.nextLine());
 		
@@ -93,7 +93,7 @@ public class Converter {
 		}
 	}
 	
-	public static void LengthConversionMenu(Scanner scanner) {
+	public static void lengthConversionMenu(Scanner scanner) {
 		int subMenuSelection = 0;
 		
 		while (subMenuSelection != 4) {
@@ -108,13 +108,13 @@ public class Converter {
 			
 			switch (subMenuSelection) {
 				case 1:
-					LengthConversion(subMenuSelection, scanner);
+					lengthConversion(subMenuSelection, scanner);
 					break;
 				case 2:
-					LengthConversion(subMenuSelection, scanner);
+					lengthConversion(subMenuSelection, scanner);
 					break;
 				case 3:
-					LengthConversion(subMenuSelection, scanner);
+					lengthConversion(subMenuSelection, scanner);
 					break;
 				case 4:
 					System.out.println("\nReturning to Main Menu.\n");
@@ -126,7 +126,7 @@ public class Converter {
 		}
 	}
 	
-	public static void LengthConversion(int selection, Scanner scanner) {
+	public static void lengthConversion(int selection, Scanner scanner) {
 		System.out.println("\nEnter value:");
 		double value = Double.parseDouble(scanner.nextLine());
 		
@@ -160,7 +160,7 @@ public class Converter {
 		}
 	}
 	
-	public static void TemperatureConversionMenu(Scanner scanner) {
+	public static void temperatureConversionMenu(Scanner scanner) {
 		int subMenuSelection = 0;
 		
 		while (subMenuSelection != 3) {
@@ -174,10 +174,10 @@ public class Converter {
 			
 			switch (subMenuSelection) {
 				case 1:
-					TemperatureConversion(subMenuSelection, scanner);
+					temperatureConversion(subMenuSelection, scanner);
 					break;
 				case 2:
-					TemperatureConversion(subMenuSelection, scanner);
+					temperatureConversion(subMenuSelection, scanner);
 					break;
 				case 3:
 					System.out.println("\nReturning to Main Menu.\n");
@@ -189,7 +189,7 @@ public class Converter {
 		}
 	}
 	
-	public static void TemperatureConversion(int selection, Scanner scanner) {
+	public static void temperatureConversion(int selection, Scanner scanner) {
 		System.out.println("\nEnter value:");
 		double value = Double.parseDouble(scanner.nextLine());
 		
